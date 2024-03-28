@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
   isLoggedIn: boolean = false;
-  
+  canShowChild: boolean = false;
   usname: string = 'kushal';
   pword: string = 'kushal';
   constructor() {
