@@ -14,6 +14,6 @@ export  class CanDeactivateGaurd implements CanDeactivate<any>{
 
   }
   canDeactivate(component : any) :boolean{
-  return false;
+  return true;
 };
 }
