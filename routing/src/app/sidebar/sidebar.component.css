@@ -16,6 +16,10 @@ li {
   text-decoration: dashed;
 }
 
-router-outlet{
-  align-items: center;
+.routing{
+  
+
+  display: flex;
+  justify-content: center;
 }
+

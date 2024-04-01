@@ -1,21 +1,31 @@
-.login {
-  align-items: center;
-}
+
 .login-form {
   min-width: 150px;
   max-width: 500px;
   width: 100%;
   text-align: center;
+  
 }
 
-.login-full-width {
+.login-full-width{
   width: 100%;
 }
+
 .login-card{
-  min-width: none;
-  max-width: 50%;
+  
   align-items: center;
   height: auto;
+  width: 30%;
+}
+
+button{
+  border-bottom: 25px;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  
 }
 
 
