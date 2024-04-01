@@ -9,6 +9,7 @@ export class CheckAuth implements CanActivate {
   constructor(private authService: AuthService,private router:Router ) {}
 
   canActivate() {
+    return true;
     if(this.authService.isLoggedIn)
       return this.authService.isLoggedIn;
     else

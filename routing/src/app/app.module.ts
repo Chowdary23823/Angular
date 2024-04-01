@@ -17,10 +17,11 @@ import { PatientsComponent } from './RouteingComponents/patients/patients.compon
 import { AuthService } from './auth.service';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './RouteingComponents/pagenotfound/pagenotfound.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
-  imports: [BrowserModule, RouterModule, AppRoutingModule,ReactiveFormsModule, FormsModule],
+  imports: [BrowserModule, RouterModule, AppRoutingModule,ReactiveFormsModule, FormsModule, HttpClientModule],
   declarations: [
     AppComponent,
     SidebarComponent,
