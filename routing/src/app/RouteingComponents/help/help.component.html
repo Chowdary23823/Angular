@@ -1,3 +1,9 @@
 <p>
-help works!
+    help works!
 </p>
+<form [formGroup]="addCategory">
+    Id<input type="number" formControlName="idofcategory" />
+    Name<input type="text" formControlName="name" />
+    Desc<input type="text" formControlName="desc" />
+    <button type="submit" (click)="onSubmit()">Add</button>
+</form>
