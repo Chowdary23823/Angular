@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { AuthService } from '../../auth.service';
+import { AuthService } from '../../Services/auth.service';
 import { Category } from '../../Model/Category';
 import { catchError } from 'rxjs';
 @Component({

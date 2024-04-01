@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../Services/auth.service';
 import { FormControl, FormGroup } from '@angular/forms';
 //import {Component} from '@angular/core';
 import {MatCardModule} from '@angular/material/card';

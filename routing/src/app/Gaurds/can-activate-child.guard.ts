@@ -1,5 +1,5 @@
 import { ActivatedRouteSnapshot, CanActivateChild, GuardResult, MaybeAsync, RouterStateSnapshot, UrlTree} from '@angular/router';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../Services/auth.service';
 import { Injectable } from '@angular/core';
 import {  Observable, of } from 'rxjs';
 

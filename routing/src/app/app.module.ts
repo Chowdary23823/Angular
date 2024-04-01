@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './RouteingComponents/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PatientsComponent } from './RouteingComponents/patients/patients.component';
-import { AuthService } from './auth.service';
+import { AuthService } from './Services/auth.service';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './RouteingComponents/pagenotfound/pagenotfound.component';
 import { HttpClientModule } from '@angular/common/http';
