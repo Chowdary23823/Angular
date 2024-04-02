@@ -11,6 +11,7 @@ import { CheckAuth } from './Gaurds/check-auth.guard';
 import { CanDeactivateGaurd } from './Gaurds/can-deactivate.guard';
 import { PagenotfoundComponent } from './RouteingComponents/pagenotfound/pagenotfound.component';
 import { canActivateChildGuard } from './Gaurds/can-activate-child.guard';
+import { UsersModule } from './users/users.module';
 
 const routes: Routes = [
   { path: '', component: HomeComponent,canActivate: [CheckAuth]  },
@@ -25,6 +26,9 @@ children:[
   { path: 'help', component: HelpComponent, canActivate: [CheckAuth],
 canDeactivate:[CanDeactivateGaurd] },
   {path:'login',component:LoginComponent},
+  {path: 'users',
+  loadChildren: () => import('./users/users.module').then(m => m.UsersModule)
+},
   { path: '**', component: PagenotfoundComponent},
 ];
 
