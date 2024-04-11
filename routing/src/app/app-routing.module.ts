@@ -23,7 +23,7 @@ children:[
 ]},
   { path: 'about', component: AboutComponent , canActivate: [CheckAuth]},
   { path: 'help', component: HelpComponent, canActivate: [CheckAuth],
-canDeactivate:[CanDeactivateGaurd] },
+canDeactivate:[CanDeactivateGaurd] ,canActivateChild:[canActivateChildGuard]},
   {path:'login',component:LoginComponent},
   { path: '**', component: PagenotfoundComponent},
 ];
